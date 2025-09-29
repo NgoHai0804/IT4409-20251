@@ -1,0 +1,9 @@
+Em đã tạo 2 file HTML: bai1.html và bai2.html.  
+
+Trong bai1.html, Em sử dụng thẻ <header>, <section>, <footer> để phân chia nội dung.  
+Em thêm ảnh chân dung bằng thẻ <img> và danh sách môn học bằng thẻ <ul>.  
+
+Trong bai2.html, Em tạo bảng thời khóa biểu bằng thẻ <table>, thêm tiêu đề bảng bằng <caption>.  
+Ở cuối bảng có đoạn <p> mô tả cảm nhận.  
+
+Mỗi file đều có ít nhất 3 dòng comment để giải thích phần code.  
