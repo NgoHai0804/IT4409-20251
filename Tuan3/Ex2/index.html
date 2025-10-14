@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>HUST CV</title>
+
+    <style>
+        #my-chart {
+            padding: 0 10%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        #chart-learning {
+            width: 49%;
+            margin: 35px auto;
+        }
+        
+        #chart-training {
+            width: 49%;
+            margin: 35px auto;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <div id="navbar">
+        <div id="navbar-top">
+            <div class="box-small" id="navbar-top-item-left">
+                <div class="box-title">Đại học Bách Khoa Hà Nội</div>
+                <div class="box-des">Cổng thông tin sinh viên</div>
+                <div class="box-icon-container">
+                    <img src="https://hust-cv-student.web.app/img/hust.png">
+                </div>
+            </div>
+            <div class="box-small" id="navbar-top-item-right">
+                <div class="box-title">Xin chào</div>
+                <div class="box-des">BẠN SINH VIÊN NĂM NHẤT</div>
+                <div class="box-icon-container">
+                    <img class="box-icon" src="https://hust-cv-student.web.app/img/ctsv.png">
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-list">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Ngoại khóa</a></li>
+                <li><a href="">Hướng nghiệp</a></li>
+                <li><a href="">Học bổng</a></li>
+                <li><a href="">Chấm điểm</a></li>
+                <li><a href="">Hành chính</a></li>
+                <li><a href="">Q&A</a></li>
+                <li><a href="">Hồ sơ</a></li>
+                <li><a href="">Nhập học</a></li>
+            </ul>
+        </nav>
+        <div id="navbar-current-path"></div>
+    </div>
+    <div class="web-body">
+        <div style="display: flex;flex-direction: column;">
+            <div style="position: relative;" class="card" id="card-user-info">
+                <div class="card-background-container">
+                    <img class="card-background" src="https://hust-cv-student.web.app/img/hust-back.png">
+                </div>
+                <div style="position: absolute; top:10vw; left:2vw ; border-radius: 50%; border: 0.3vw solid white; width: 10vw;height: 10vw; overflow: hidden;">
+                    <img style="width: 100%;" src="./anh.jpg">
+                </div>
+
+                <div class="card-body" style="margin-top: 5vw;">
+                    <ul>
+                        <li>MSSV: 20225308</li>
+                        <li>Họ tên: Ngô Ngọc Hải</li>
+                        <li>Lớp: Kỹ thuật máy tính</li>
+                        <li>Email: hai.nn225308@sis.hust.edu.vn</li>
+                        <li>Email cá nhân: ngongochai0804@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="card-more-info">
+                <div class="navbar-list">
+                    <ul>
+                        <li><a class="active">Trạng thái</a>
+                        </li>
+                        <li><a>Quản lý</a></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div id="trangthai">
+                        <div class="text-block-body">
+                            <div>
+                                <p>Trạng thái học tập: Học</p>
+                                <p>
+                                    CPA: 3.28
+                                </p>
+                                <p>
+                                    Nợ: 0 TC
+                                </p>
+                                <p>Tích lũy: 98 TC</p>
+                                <p>Mức cảnh cáo: M0</p>
+                                <p>Trình độ: Năm 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card-management-info">
+            <div class="navbar-list">
+                <ul>
+                    <li><a class="active">Lý lịch</a>
+                    </li>
+                    <li><a>Quyết định</a></li>
+                    <li><a>Khen thưởng</a></li>
+                    <li><a>Liên hệ</a></li>
+                    <li><a>Nhận xét</a></li>
+                    <li><a>Hoạt động tham gia</a></li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div id="cmi-lylich">
+                    <div>
+                        <div>
+                            <h4>
+                                Thông tin cá nhân
+                            </h4>
+                            <div class="text-block-body">
+                                <div>
+                                    <p>Ngày sinh: 08/04/2004</p>
+                                    <p>Số CMTND: 1234567890</p>
+                                    <p>Dân tộc: Kinh</p>
+                                    <p>Ngày vào Đoàn: 12/12</p>
+                                </div>
+                                <div>
+                                    <p>Nơi sinh: Việt Nam</p>
+                                    <p>Nơi cấp: Việt Nam</p>
+                                    <p>Tôn giáo: Không</p>
+                                    <p>Ngày vào Đảng:</p>
+                                </div>
+                                <div>
+                                    <p>Giới tính: Nam </p>
+                                    <p>
+                                        Ngày cấp: 01/01/2020
+                                    </p>
+                                    <p>
+                                        Chi đoàn: Đại học Bách Khoa Hà Nội
+                                    </p>
+                                    <p>Đoàn viên</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-block-body">
+                            <div>
+                                <p>
+                                    Đối tượng chính sách:
+                                </p>
+                                <p>
+                                    Số thẻ bảo hiểm: 1234567890
+                                </p>
+                                <p>
+                                    Địa chỉ thường trú: Giao Thủy, Nam Định
+                                </p>
+                                <p>
+                                    Nơi ở hiện tại: Số 79, Ngọc Hồi, Thanh Trì, Hà Nội
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Thông tin gia đình
+                            </h4>
+                            <div>
+                                <div>
+                                    <div class="text-block-body text-bold">
+                                        <p>
+                                            Họ và tên bố: Ngô Văn A
+                                        </p>
+                                    </div>
+                                    <div class="text-block-body">
+                                        <div>
+                                            <p>Dân tộc: Kinh</p>
+                                            <p>
+                                                Nơi làm việc: Hà Nội
+                                            </p>
+                                            <p>
+                                                Địa chỉ thường trú: Giao Thủy, Nam Định
+                                            </p>
+                                            <p>Liên hệ: 123456789</p>
+                                        </div>
+                                        <div>
+                                            <p>Năm sinh: 1999</p>
+                                            <p>
+                                                Tôn giáo: Không
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>Quốc tịch: Việt Nam</p>
+                                            <p>Nghề nghiệp: Làm ruộng</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-block-body text-bold">
+                                <p>
+                                    Họ và tên mẹ: Lê Thị B
+                                </p>
+                            </div>
+                            <div class="text-block-body">
+                                <div>
+                                    <p>Dân tộc: Kinh</p>
+                                    <p>
+                                        Nơi làm việc: Hà Nội
+                                    </p>
+                                    <p>
+                                        Địa chỉ thường trú: Giao Thủy, Nam Định
+                                    </p>
+                                    <p>Liên hệ: 124567890</p>
+                                </div>
+                                <div>
+                                    <p>Năm sinh: 1999</p>
+                                    <p>
+                                        Tôn giáo: Không
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Quốc tịch: Việt Nam</p>
+                                    <p>Nghề nghiệp: Làm ruộng</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block-body text-bold">
+                        Thông tin người thân khác: Không
+                    </div>
+                    <div class="text-block-body text-bold">
+                        <div>
+                            Thuộc hộ: Không
+                        </div>
+                        <div>
+                            Số sổ: Không
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="my-chart">
+        <div id="chart-learning"></div>
+        <div id="chart-training"></div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+</html>
