@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tra cứu kết quả học tập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>Trang tra cứu kết quả học tập</h1>
+
+      <div class="row">
+        <input id="sidInput" type="text" placeholder="Nhập mã số sinh viên" />
+        <button id="lookupBtn">Tra cứu</button>
+        <button id="clearCacheBtn" title="Xóa cache">Xóa cache</button>
+      </div>
+
+      <div id="status" class="status"></div>
+      <div id="studentInfo"></div>
+
+      <table id="resultsTable" style="display: none">
+        <thead>
+          <tr>
+            <th>Mã học phần</th>
+            <th>Tên học phần</th>
+            <th>Số tín chỉ</th>
+            <th>Học kỳ</th>
+            <th>Điểm (hệ 10)</th>
+            <th>Điểm chữ</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+      </table>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
